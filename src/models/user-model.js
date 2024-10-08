@@ -8,7 +8,7 @@ const userSchema = new db.Schema({
   },
   birthday_date: {
     type: Date,
-    required: true,
+    required: false,
   },
   email: {
     type: String,
