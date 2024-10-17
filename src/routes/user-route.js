@@ -15,11 +15,11 @@ import via_cep from "../middleware/via_cep.js"
 
 const router = Router();
 
-router.post("/", check_token, check_role(["ADM"]), via_cep, store);
-router.get("/", check_token, check_role(["USU", "ADM"]), index); 
+router.post("/",);
+router.get("/", index); 
 router.get("/:id", check_token, show);
-router.put("/:id", check_token,via_cep, update);
-router.delete("/:id", check_token, destroy);
+router.put("/:id", update);
+router.delete("/:id", destroy);
 
 router.post("/signup", signup);
 router.post("/login", login);
